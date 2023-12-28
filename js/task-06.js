@@ -11,6 +11,8 @@ function createBox() {
   let numberBoxes = Number(input.value)
   const totalBoxes = []
 
+  boxes.innerHTML = "";
+  
   if (numberBoxes >= input.attributes.min.value && numberBoxes <= input.attributes.max.value) {
   for (let i = 1; i <= numberBoxes; i+=1) {
     const box = document.createElement("div")
@@ -23,6 +25,8 @@ function createBox() {
     boxes.append(...totalBoxes)
 
     input.value = "";
+
+   
 }
   else {
     alert("Input number from 1 to 100")
