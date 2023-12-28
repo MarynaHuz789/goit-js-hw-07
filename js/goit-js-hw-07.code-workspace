@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../JS з нуля/01-base-start"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "01-base-start"
+	}
+}
