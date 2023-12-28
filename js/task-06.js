@@ -1,4 +1,5 @@
-const boxes =  document.querySelector("#boxes")
+
+const boxes = document.querySelector("#boxes")
 const input = document.querySelector("input")
 const createBtn = document.querySelector("[data-create]")
 const destroyBtn = document.querySelector("[data-destroy]")
@@ -20,6 +21,8 @@ function createBox() {
     totalBoxes.push(box)
   }
     boxes.append(...totalBoxes)
+
+    input.value = "";
 }
   else {
     alert("Input number from 1 to 100")
@@ -27,7 +30,7 @@ function createBox() {
 }
 
 function destroyAllBoxes() {
-  input.value = ""
+  
   boxes.innerHTML = ""
 }
 
